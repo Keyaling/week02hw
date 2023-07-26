@@ -19,6 +19,9 @@ a{
 
 img{
     display: block;
+    max-width: 100%;// 會自適應瀏覽器寬度
+    height: auto;
+    
 }
 h1{
     font-size: 128px;
@@ -33,7 +36,7 @@ h3{
     font-size: 20px;
 }
 .container{
-    width: 1296px;
+    max-width: 1296px;
     margin: 0 auto;
 }
 .d-flex{
@@ -72,7 +75,7 @@ h3{
 .btn-black{
     background-color: #000000;
     color: #FFFFFF;
-    margin-top: 76px;
+    // margin-top: 76px;
 }
 .mr-24px{
     margin-right: 24px;
@@ -113,6 +116,7 @@ h3{
     padding: 16px;
     margin-bottom: 24px;
     border: 1px solid rgba(227, 227, 227, 1);
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
   }
 }
 .aboutMeText{
@@ -154,8 +158,11 @@ h3{
   width: 856px;
   
 }
-.project-text a:hover{
-  background-color: #00FFA3;
+.project-text{
+  flex-direction: column;
+  a:hover{
+    background-color: #00FFA3;
+  }
 }
 .rowTop{
   margin-bottom: 28px;
